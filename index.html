@@ -1,0 +1,246 @@
+<!--Etiquetas de estructura básica-->
+<!DOCTYPE html> <!--Define el tipo de documento como HTML5-->
+
+<html lang="es"> <!-- Define el elemento raíz de un documento HTML (Idioma español) -->
+
+<head><!-- Define el área de encabezado del documento -->
+    <meta charset="UTF-8"> 
+    <title>Tarea 1 - Kembly Margoth Quesada Gómez</title> <!-- Define el título del documento que se muestra en la pestaña del navegador -->
+
+    <base href="./"> <!-- Define la URL base para todas las URLs relativas en el documento -->
+    <link rel="stylesheet" href="styles.css"> <!-- Enlaza un archivo CSS externo para estilos -->
+    <meta name="description" content="Etiquetas HTML"> <!-- Define los metadatos de un documento HTML -->
+    <meta name="author" content="Kembly Margoth Quesada Gómez">
+</head>
+
+<body> <!-- Define el cuerpo del documento HTML -->
+    <header> <!-- Define el encabezado de la página -->
+        <h1>Tarea 1: Etiquetas HTML</h1> <!-- Define un encabezado de nivel 1 -->
+        <hgroup> <!-- Agrupa encabezados relacionados -->
+            <h2>Demostración de etiquetas</h2>
+            <h3>Por: Kembly Margoth Quesada Gómez</h3>
+        </hgroup>
+        <figure> <!-- Define contenido ilustrativo, como imágenes o diagramas -->
+            <img src="img/avatar.png" 
+            alt="Avatar de Kembly Margoth Quesada Gómez"
+            style="width: 150px; height: 150px;">
+            <figcaption>Mi avatar</figcaption>
+        </figure>
+    </header>
+
+    <main>
+        <section id="estructura-seccion">
+            <h2>Etiquetas de estructura de sección</h2>
+
+            <div> <!-- Define una sección genérica de contenido -->
+                <p>Este es un <strong>&lt;div&gt;</strong>, un contenedor genérico para agrupar contenido.</p>
+            </div>
+
+            <address> <!-- Define información de contacto -->
+                Autor: Kembly Margoth Quesada Gómez<br>
+                Correo: kequesadago@est.utn.ac.cr
+            </address>
+
+            <iframe src="https://www.utn.ac.cr" width="400" height="200" title="Sitio UTN"></iframe> 
+            <!-- Define un marco embebido para mostrar contenido de otro sitio web -->
+        </section>
+
+        <section id="estructura-grupo">
+            <h2>Etiquetas de estructura de grupo</h2>
+
+            <h3>Listas</h3>
+            <h4>Lista desordenada (&lt;ul&gt;)</h4> <!-- Define una lista sin orden específico -->
+            <ul>
+                <li>Elemento uno</li> <!-- Define un elemento de lista dentro de una lista desordenada -->
+                <li>Elemento dos</li>
+            </ul>
+
+            <h4>Lista ordenada (&lt;ol&gt;)</h4> <!-- Define una lista con orden específico --> 
+            <ol>
+                <li>Paso 1</li>
+                <li>Paso 2</li>
+            </ol>
+
+            <h4>Lista de descripción (&lt;dl&gt;)</h4>
+            <dl> <!-- Define una lista de términos y descripciones -->
+                <dt>HTML</dt> <!-- Define un término en una lista de descripción -->
+                <dd>Lenguaje de marcado para páginas web.</dd> <!-- Define la descripción de un término en una lista de descripción -->
+                <dt>CSS</dt>
+                <dd>Lenguaje para dar estilo a las páginas web.</dd>
+            </dl>
+
+            <figure>
+                <img src="img/ejemplo.jpg" alt="Ejemplo de figura" style="width: 200px;">
+                <figcaption>Ejemplo de &lt;figure&gt; y &lt;figcaption&gt;</figcaption>
+            </figure>
+
+            <details> <!-- Define un widget de divulgación que el usuario puede abrir o cerrar -->
+                <summary>Haz clic para ver más detalles</summary> <!-- Define un resumen para el elemento &lt;details&gt; que se muestra cuando está cerrado -->
+                <p>Este texto se muestra al expandir el elemento &lt;details&gt;.</p>
+            </details>
+
+            <dialog open> <!-- Define un cuadro de diálogo que se muestra al cargar la página (atributo open) -->
+                <p>Este es un cuadro de diálogo (&lt;dialog&gt;).</p>
+            </dialog>
+        </section>
+
+        <section id="texto">
+            <h2>Etiquetas de texto</h2>
+
+            <p>Define un párrafo de texto con la etiqueta &lt;p&gt;.</p> <!-- Define un párrafo de texto -->
+
+            <p>Línea 1<br> Define un salto de línea dentro de un párrafo usando &lt;br&gt;.</p> <!-- Define un salto de línea dentro de un párrafo -->
+
+            <pre> <!-- Define texto preformateado que conserva espacios y saltos de línea -->
+        Define texto preformateado 
+            que conserva espacios   
+                y saltos de línea
+            </pre>
+
+            <blockquote> <!-- Define una cita en bloque (&lt;blockquote&gt;), normalmente de otra fuente -->
+            Define una cita en bloque &lt;blockquote&gt; , normalmente de otra fuente.
+            </blockquote>
+
+            <p>Una cita corta en línea con &lt;q&gt;: <q>El conocimiento es poder.</q></p> 
+            <!-- Define una cita corta en línea usando &lt;q&gt; (comillas) -->
+
+            <p>Referencia de una obra con &lt;cite&gt;: <cite>El Quijote</cite>.</p> 
+            <!-- Define una referencia a una obra usando &lt;cite&gt; -->
+
+            <p>Una <abbr title="Universidad Técnica Nacional">UTN</abbr> es una universidad pública.</p>
+            <!-- Define un término abreviado con una pista de herramienta -->
+
+            <p><dfn title="Search Engine Optimization">SEO</dfn> es la optimización para motores de búsqueda.</p>
+            <!-- Define un término definido -->
+
+            <p>Ejemplo de código con &lt;code&gt;: <code>console.log('Hola');</code></p>
+            <!-- Define código fuente -->
+
+            <p>Entrada de teclado con &lt;kbd&gt;: Presiona <kbd>Ctrl</kbd> + <kbd>C</kbd>.</p>
+            <!-- Define entrada de teclado -->      
+
+            <p><b>Texto en negrita con &lt;b&gt;</b> y <strong>texto importante con &lt;strong&gt;</strong>.</p>
+            <!-- Define texto en negrita y texto importante -->
+
+            <p><i>Texto en cursiva con &lt;i&gt;</i> y <em>texto enfatizado con &lt;em&gt;</em>.</p>
+            <!-- Define texto en cursiva y texto enfatizado -->
+
+            <p>Texto <mark>marcado con &lt;mark&gt;</mark> para resaltar algo.</p>
+            <!-- Define texto marcado para resaltar algo -->    
+
+            <p><small>Texto pequeño con &lt;small&gt;, útil para notas.</small></p>
+            <!-- Define texto pequeño para notas -->
+
+            <p><del>Texto eliminado con &lt;del&gt;</del> y <ins>texto insertado con &lt;ins&gt;</ins>.</p>
+            <!-- Define texto eliminado y texto insertado -->   
+
+            <p>Fórmula química: H<sub>2</sub>O (subíndice con &lt;sub&gt;).</p>
+            <!-- Define fórmula química con subíndice -->
+            <p>Potencia: 2<sup>3</sup> (superíndice con &lt;sup&gt;).</p>
+            <!-- Define potencia con superíndice -->
+
+            <p>Fecha con &lt;time&gt;: <time datetime="2026-05-23">23 de mayo de 2026</time>.</p>
+            <!-- Define fecha con &lt;time&gt; -->
+
+            <p>Dato con &lt;data&gt;: <data value="12345">ID de usuario</data>.</p>
+            <!-- Define dato con &lt;data&gt; -->
+
+            <p>Un <span style="color: rgb(255, 0, 106);">texto dentro de &lt;span&gt;</span> para aplicar estilos específicos.</p>
+            <!-- Define un texto dentro de &lt;span&gt; para aplicar estilos específicos -->
+    
+        </section>
+
+        <section id="enlaces">
+            <h2>Etiquetas de enlace</h2>
+
+            <p>Enlace básico con &lt;a&gt;:
+                <a href="https://www.google.com" target="_blank">Ir a Google</a>
+                <!-- Define un enlace básico con &lt;a&gt; que abre en una nueva pestaña (target="_blank") -->
+            </p>
+
+            <h3>Mapa de imagen (&lt;map&gt; y &lt;area&gt;)</h3>
+            <img src="img/mapaUTN.jpg" alt="Mapa de ejemplo" usemap="#mapa-ejemplo">
+            
+
+            <map name="mapa-ejemplo"> <!-- Define un mapa de imagen con un nombre específico -->
+                <area shape="rect" coords="0,0,100,100" href="https://www.utn.ac.cr" alt="UTN">
+                <!-- Define un área rectangular dentro del mapa de imagen  -->
+                <area shape="circle" coords="150,150,50" href="https://www.mozilla.org" alt="Mozilla">
+            </map>
+        </section>
+
+        <section id="imagenes">
+            <h2>Etiquetas de imagen</h2>
+
+            <h3>&lt;img&gt;</h3>
+            <img src="img/foto.png" alt="Descripción de la imagen" width="200">
+                <!-- Define una imagen con la etiqueta &lt;img&gt; y atributos para la fuente, 
+                 texto alternativo y ancho -->
+
+            <h3>&lt;picture&gt; y &lt;source&gt;</h3>
+            <picture> 
+            <!-- Define un contenedor para imágenes con diferentes fuentes según las condiciones del dispositivo -->
+                <source srcset="img/foto.png" media="(min-width: 800px)">
+                <source srcset="img/foto.png" media="(min-width: 500px)">
+                <!-- Define diferentes fuentes de imagen para diferentes tamaños de pantalla -->
+                <img src="img/foto.png" alt="Imagen adaptable">
+            </picture>
+
+            <h3>&lt;canvas&gt;</h3> 
+            <!-- Define un área de dibujo para gráficos dinámicos con la etiqueta &lt;canvas&gt; -->
+            <canvas id="miCanvas" width="200" height="100" style="border:1px solid #000;"></canvas>
+
+            <h3>&lt;svg&gt;</h3>
+            <!-- Define gráficos vectoriales escalables con la etiqueta &lt;svg&gt; -->
+            <svg width="200" height="100">
+                <rect width="200" height="100" style="fill:lightblue;stroke:black;stroke-width:2"></rect>
+                <text x="20" y="55" fill="black">Ejemplo SVG</text>
+            </svg>
+        </section>
+
+        <script>
+            const canvas = document.getElementById('miCanvas');
+            const ctx = canvas.getContext('2d');
+            ctx.fillStyle = 'red';
+            ctx.fillRect(10, 10, 100, 50);
+        </script>
+
+        <section id="multimedia">
+            <h2>Etiquetas de multimedia</h2>
+
+            <h3>Audio (&lt;audio&gt; y &lt;source&gt;)</h3>
+            <audio controls> <!-- Define un elemento de audio con controles para reproducir, pausar, etc. -->
+                <source src="media/audio.mp3" type="audio/mpeg">
+                <!-- Define la fuente de audio y su tipo -->
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+
+            <h3>Video (&lt;video&gt;, &lt;source&gt; y &lt;track&gt;)</h3>
+
+            <video controls width="320">
+                <!-- Define un elemento de video con controles para reproducir, pausar, etc. -->
+                <source src="media/video.mp4" type="video/mp4">
+                <track kind="subtitles" src="media/subtitulos.vtt" srclang="es" label="Español">
+                <!-- Define la fuente de video, su tipo y una pista de subtítulos -->
+                Tu navegador no soporta el elemento de video.
+            </video>
+
+            <h3>Video de YouTube con &lt;iframe&gt;</h3>
+            <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/UB1O30fR-EE?si=7UEOEt15Sp3Hq-ZK" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+            encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+            </iframe>
+            <!-- Define un video de YouTube embebido usando &lt;iframe&gt; con atributos para el tamaño, 
+            fuente, título, etc. -->
+        </section>
+
+        <footer>
+            <p>Tarea 1 - Diseño de Aplicaciones Web</p>
+            <p>Estudiante: Kembly Margoth Quesada Gómez</p>
+        </footer>
+
+    </main>
+</body>
+</html>
